@@ -1,43 +1,157 @@
 body {
     margin: 0;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    min-width: 400px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
+    padding: 0;
     box-sizing: border-box;
-    border: 1px solid #5f9341;
-    margin-bottom: 4px;
+
+    font-family: "Inter", sans-serif;
+    background: #1F2937;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #111827;
 }
 
-button {
-    background: #5f9341;
-    color: white;
-    padding: 10px 20px;
-    border: 1px solid #5f9341;
-    font-weight: bold;
+.container {
+    width: 550px;
+    height: 729px;
+
+    margin-top: 30px;
+
 }
 
-#delete-btn {
-    background: white;
-    color: #5f9341;
+.header, .input, .body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-ul {
-    margin-top: 20px;
-    list-style: none;
-    padding-left: 0;
+.header {
+    background: #6943FF;
+    color: #FFFFFF;
+
+    height: 285px;
+    padding-bottom: 20px;
 }
 
-li {
-    margin-top: 5px;
+#convert-btn{
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    height: 42px;
+    width: 117px;
+
+    margin-top: 15px;
+
+    font-family: inherit;
+
+    transition: transform 0.1s ease, background 0.1s ease;
+
+    background: #FFFFFF;
 }
 
-a {
-    color: #5f9341;
+#convert-btn:hover{
+    background: #ffffffdf;
+    transform: scale(0.95);
+}
+
+#convert-btn:active{
+    background: #ffffffb3;
+    transform: scale(1.05);
+}
+
+#title, #input-num{
+    font-family: inherit;
+    color: #FFFFFF;
+}
+
+#title{
+    margin: 0px 0px -10px 0px;
+
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 800;
+}
+
+#input-num {
+    -webkit-appearance: textfield;
+    appearance: textfield;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    background: none;
+
+    width: 137px;
+    height: 103px;
+
+    font-size: 58px;
+    font-weight: 800;
+    text-align: center; 
+    line-height: 103px;
+
+    color: #FFFFFF;
+}
+
+/* Remove number input arrows in WebKit browsers */
+#input-num::-webkit-inner-spin-button,
+#input-num::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove number input arrows in Firefox */
+#input-num[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.length, .volume, .mass{
+    background: #273549;
+
+    margin: 8px;
+
+    width: 90%;
+    height: 109px;
+
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 20px;
+    color: #CCC1FF;
+
+    transition: transform 0.05s ease, background 0.1s ease;
+}
+
+.length:hover, .volume:hover, .mass:hover{
+    transform: scale(1.02);
+}
+
+.length{
+    margin-top: 30px;
+}
+
+.body{
+    background-color: #1F2937;
+
+    padding-bottom: 30px;
+}
+
+
+
+#output-length, #output-volume, #output-mass{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+    color: #FFFFFF;
+
+    margin-top: -15px;
 }
 
 
